@@ -9,8 +9,8 @@ def get_info():
     track = request.args.get('track')
     current_day = datetime.datetime.now().strftime('%A')
     current_utc = datetime.datetime.utcnow().isoformat()+'Z'
-    github_file_url = ''
-    github_repo_url = ''
+    github_file_url = 'https://github.com/Benyedder98/hng/blob/main/endpoint.py'
+    github_repo_url = 'https://github.com/Benyedder98/hng'
 
     data_set = {
         'slack_name': slack_name,
