@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/api', methods =['GET'])
 def get_info():
-    slack_name = request.args.get('slack_name')
-    track = request.args.get('track')
+    slack_name = request.args.get('Boniface')
+    track = request.args.get('backend')
     current_day = datetime.datetime.now().strftime('%A')
     current_utc = datetime.datetime.utcnow().isoformat()+'Z'
     github_file_url = 'https://github.com/Benyedder98/hng/blob/main/endpoint.py'
